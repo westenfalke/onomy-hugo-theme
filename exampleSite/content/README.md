@@ -620,7 +620,7 @@ Finding and adding all files we creates so far witout the meta data in `.git`
 [mislav-gh-linux]: https://github.com/cli/cli/blob/trunk/docs/install_linux.md  "Installing gh on Linux"
 [gitaarik-git-submodules]: https://gist.github.com/gitaarik/8735255 "Submodules basic explanation"
 [daringfireball]: https://daringfireball.net/projects/markdown/syntax "Markdown: Syntax"
-´
+
 [tools]: #tools "all the tools you need"
 [hugo-cmd]: #hugo "hugo command"
 [tree-cmd]: #tree "tree command"
