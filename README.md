@@ -225,7 +225,7 @@ Hence the content of this theme is straigt from the hugo documentation I'll skip
 ### A First Mile Stone 
 
 #### Lauching hugo
-One could think, this is it, and yes firing up hugo right now will give us a working [sitemap][sitemap-xml] and three empty pages and hence content creation is our task, this is pretty much what to expect.  
+One could think, this is it, and yes firing up hugo right now will give us a working `sitemap-xml` and three empty pages and hence content creation is our task, this is pretty much what to expect.  
 ![hugo start parameter aligned with folder](static/img/screenshot/hugo-parameter.png "hugo parameter and folder")
 
 
