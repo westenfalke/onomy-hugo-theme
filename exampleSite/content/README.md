@@ -449,7 +449,7 @@ Hence this all of our documents are drafts, the flag `--buildDrafts` will do the
     Press Ctrl+C to stop
 
 
-I'm rather keen to see the [http://localhost:1313/sitemap.xml]() and than have a look at [http://localhost:1313/]().
+I'm rather keen to see the http://localhost:1313/sitemap.xml and than have a look at http://localhost:1313/.
 
 	<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -640,5 +640,3 @@ Finding and adding all files we creates so far witout the meta data in `.git`
 [hugo-templates-lists-doc]: https://gohugo.io/templates/lists/ "HUGO Lists Template"
 [hugo-single-page-templates-doc]: https://gohugo.io/templates/single-page-templates/ "HUGO Single Page Templates"
 [hugo-content-view-templates-doc]: https://gohugo.io/templates/views/#summaryhtml "HUGO Content View Templates"
-
-[sitemap-xml]: http://localhost:1313/sitemap.xml "sitemap.xml @ localhost"

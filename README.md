@@ -639,4 +639,3 @@ Finding and adding all files we creates so far witout the meta data in `.git`
 [hugo-single-page-templates-doc]: https://gohugo.io/templates/single-page-templates/ "HUGO Single Page Templates"
 [hugo-content-view-templates-doc]: https://gohugo.io/templates/views/#summaryhtml "HUGO Content View Templates"
 
-[sitemap-xml]: http://localhost:1313/sitemap.xml "sitemap.xml @ localhost"
