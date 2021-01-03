@@ -25,7 +25,7 @@ and `westenfalke@MiniDEV:~/CAHTFS$` is replaced with just `#` just like this:
     drwxr-xr-x  2 westenfalke westenfalke 4096 Jan  2 15:52 .
     drwxr-xr-x 11 westenfalke westenfalke 4096 Jan  2 15:52 ..
 
-## [Installation][Installation]
+## Installation
 
 ### Madatory Commands
 #### hugo
@@ -603,9 +603,9 @@ Finding and adding all files we creates so far witout the meta data in `.git`
 	 * [new branch]      master -> master
 
 
-<div id="tbd"></div>
-
 ## Second Half OF Creating A HUGO Theme From Scratch
+
+## TBD
 * add tanonomy templates
 * link to a page about LICENSE selection on gitgub
 * link to a page about LICENSE selection with CC License Chooser
@@ -622,7 +622,7 @@ Finding and adding all files we creates so far witout the meta data in `.git`
 [readme-md]: # "README.md"
 [tbd]: #tbd "To Be Done"
 
-[credits]: #Credits "Thank you ALL"
+[credits]: #credits "Thank you ALL"
 [kaushalmodi-hugo-sandbox]: https://gitlab.com/kaushalmodi/hugo-sandbox/ "The hugo-sandbox "
 [mislav-gh-linux]: https://github.com/cli/cli/blob/trunk/docs/install_linux.md  "Installing gh on Linux"
 [gitaarik-git-submodules]: https://gist.github.com/gitaarik/8735255 "Submodules basic explanation"
@@ -637,8 +637,8 @@ Finding and adding all files we creates so far witout the meta data in `.git`
 [git]: https://git-scm.com/ "git distributed version control system --local-branching-on-the-cheap"
 [gitgub]: https://github.com/ "GitHUB Version Control - Where the world builds software"
 
-[preparation]: #Preparation "Preparation For Creating A HUGO Theme From Scratch"
-[installation]: #Installation "Installation For Creating A HUGO Theme From Scratch"
+[preparation]: #preparation "Preparation For Creating A HUGO Theme From Scratch"
+[installation]: ##nstallation "Installation For Creating A HUGO Theme From Scratch"
 [cahtfs]: #creating-a-hugo-theme-from-scratch "Creating A HUGO Theme From Scratch" 
 [cahtfs-second-half]: #second-half-of-creating-a-hugo-theme-from-scratch "Second Half OF Creating A HUGO Theme From Scratch"
 [hugo-templates-doc]: https://gohugo.io/templates/ "hugo templates documentation"
