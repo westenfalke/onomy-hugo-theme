@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "onomy"
+license = "Attribution-ShareAlike 4.0 International"
+licenselink = "https://creativecommons.org/licenses/by-sa/4.0?ref=chooser-v1"
+description = "onomy (hugo taxonomy template)"
+homepage = "https://github.com/westenfalke/onomy-hugo-theme"
+tags = [gdpr selfcontaint learning tutorial]
+features = [taxonomy pagination cookie-free]
+min_version = "0.41"
+
+[author]
+name = "westenfalke"
+homepage = "https://github.com/westenfalke"
+
+# If porting an existing theme
+###[original]
+###  name = ""
+###  homepage = ""
+###  repo = ""
