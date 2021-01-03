@@ -54,7 +54,7 @@ Hence I like to see you participating in this project I'll publish it on GitHUB 
     # sudo apt update
     # sudo apt install gh
 
-## Preparation
+## [Preparation][Preparation]
 This prepatations are optional, but for convinience I like to have of site version a control in place 
 ### Login to GitHub 
     # gh auth login
