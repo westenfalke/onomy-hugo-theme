@@ -504,7 +504,7 @@ Just to proofe the above assumtion about the invocation of the `index.html` temp
 
 
 ## Almost Half Time
-Before any further changes I'm going to commit this piece of work to `git` with some specific preparation, you can [skip](#SecondHalf) if you are not invested in version control [jump direcly to Second Half OF Creating A HUGO Theme From Scratch](#SecondHalf)
+Before any further changes I'm going to commit this piece of work to `git` with some specific preparation, you can [skip](#SecondHalf) if you are not invested in version control [jump direcly to Second Half OF Creating A HUGO Theme From Scratch](#second-half-of-creating-a-hugo-theme-from-scratch)
 
 ### What To Ignore 
 Telling git to ignore some files and  folder comcleatly.

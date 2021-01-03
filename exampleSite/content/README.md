@@ -227,7 +227,7 @@ Hence the content of this theme is straigt from the hugo documentation I'll skip
 ### A First Mile Stone 
 
 #### Lauching hugo
-One could think, this is it, and yes firing up hugo right now will give us a working [sitemap][sitemap-xml] and three empty pages and hence content creation is our task, this is pretty much what to expect.  
+One could think, this is it, and yes firing up hugo right now will give us a working `sitemap-xml` and three empty pages and hence content creation is our task, this is pretty much what to expect.  
 ![hugo start parameter aligned with folder](/img/screenshot/hugo-parameter.png "hugo parameter and folder")
 
 
@@ -449,6 +449,10 @@ Hence this all of our documents are drafts, the flag `--buildDrafts` will do the
     Press Ctrl+C to stop
 
 
+
+
+
+
 I'm rather keen to see the http://localhost:1313/sitemap.xml and than have a look at http://localhost:1313/.
 
 	<?xml version="1.0" encoding="utf-8" standalone="yes"?>
@@ -506,7 +510,9 @@ Just to proofe the above assumtion about the invocation of the `index.html` temp
 
 
 ## Almost Half Time
-Before any further changes I'm going to commit this piece of work to `git` with some specific preparation, you can [skip](#SecondHalf) if you are not invested in version control [jump direcly to Second Half OF Creating A HUGO Theme From Scratch](#SecondHalf)
+Before any further changes I'm going to commit this piece of work to `git` with some specific preparation, you can [skip](#second-half-of-creating-a-hugo-theme-from-scratch) if you are not invested in version control [jump direcly to Second Half OF Creating A HUGO Theme From Scratch](#second-half-of-creating-a-hugo-theme-from-scratch)
+
+
 
 ### What To Ignore 
 Telling git to ignore some files and  folder comcleatly.
