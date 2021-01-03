@@ -594,8 +594,9 @@ Finding and adding all files we creates so far witout the meta data in `.git`
 	To https://github.com/westenfalke/onomy-hugo-theme.git
 	 * [new branch]      master -> master
 
+<div id="tbd">
 ## Second Half OF Creating A HUGO Theme From Scratch
-<div id="tbd"/>
+</div>
 * add tanonomy templates
 * link to a page about LICENSE selection on gitgub
 * link to a page about LICENSE selection with CC License Chooser

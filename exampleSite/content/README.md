@@ -596,8 +596,9 @@ Finding and adding all files we creates so far witout the meta data in `.git`
 	To https://github.com/westenfalke/onomy-hugo-theme.git
 	 * [new branch]      master -> master
 
+<div id="tbd">
 ## Second Half OF Creating A HUGO Theme From Scratch
-<div id="tbd"/>
+</div>
 * add tanonomy templates
 * link to a page about LICENSE selection on gitgub
 * link to a page about LICENSE selection with CC License Chooser
@@ -621,10 +622,10 @@ Finding and adding all files we creates so far witout the meta data in `.git`
 [daringfireball]: https://daringfireball.net/projects/markdown/syntax "Markdown: Syntax"
 
 [tools]: #tools "all the tools you need"
-[hugo-cmd]: #hugo-cmd "hugo command"
-[tree-cmd]: #tree-cmd "tree command"
-[git-cmd]: #git-cmd "git the version control"
-[gh-cmd]: #gh-cmd "GitHUB CLI tool"
+[hugo-cmd]: #hugo "hugo command"
+[tree-cmd]: #tree "tree command"
+[git-cmd]: #git "git the version control"
+[gh-cmd]: #gh "GitHUB CLI tool"
 [cc-license-chooser]: https://creativecommons.org/choose/ "Creative Commons License Chooser"
 [git]: https://git-scm.com/ "git distributed version control system --local-branching-on-the-cheap"
 [gitgub]: https://github.com/ "GitHUB Version Control - Where the world builds software"
