@@ -1,23 +1,17 @@
 ---
 title: Creating A HUGO Theme westenfalke/onomy-hugo-theme From Scratch
 ---
-
 ## Convention
 ### Root
-!!!!!!
-Let's start with a clean slate e.g. in our home directory e.g. in folder named `\~/CAHTFS/`.
+Let's start with a clean slate e.g. in our home directory e.g. in a folder named `\~/CAHTFS/`.
+Its name dosen't matter and to keep things consistent and easy to replay, 
+all paths are relative too this folder and all comands are executes sitting in that folder, too. 
 
-    westenfalke@MiniDEV:~$ mkdir CAHTFS
+	westenfalke@MiniDEV:~$ mkdir CAHTFS
     westenfalke@MiniDEV:~$ cd CAHTFS/
     westenfalke@MiniDEV:~/CAHTFS$
 
-    CAHTFS/
-    ├── themes
-    └── websites
-
-To keep things consistent and easy to replay, all paths are relative too this folder and all comands are executes sitting in that folder, too. 
-
-and `westenfalke@MiniDEV:~/CAHTFS$` is replaced with just `#`
+and `westenfalke@MiniDEV:~/CAHTFS$` is replaced with just `#` just like this:
 
 
     westenfalke@MiniDEV:~/CAHTFS$ ls -la
@@ -31,7 +25,7 @@ and `westenfalke@MiniDEV:~/CAHTFS$` is replaced with just `#`
     drwxr-xr-x  2 westenfalke westenfalke 4096 Jan  2 15:52 .
     drwxr-xr-x 11 westenfalke westenfalke 4096 Jan  2 15:52 ..
 
-## [Installation][Installation]{#installation}
+## [Installation][Installation]
 
 ### Madatory Commands
 #### [hugo][hugo-cmd]{#hugo-cmd}
@@ -50,7 +44,7 @@ I introduce the `tree` command to for sake of this tutorial.
 #### [git][git-cmd]{#git-cmd}
 I like `git` to do the version controll thingi here,
 if version control is not in you scope you can start
-[here Creating A HUGO Theme From Scratch](#cahtfs)
+[here Creating A HUGO Theme From Scratch][cahtfs]
 
     # sudo apt install git
 
@@ -62,8 +56,8 @@ Hence I like to see you participating in this project I'll publish it on GitHUB 
     # sudo apt update
     # sudo apt install gh
 
-## [Preparation][Preparation]{#preparation}
-This prepatation are not madatory but for convinience of having version a control in place 
+## [Preparation][Preparation]
+This prepatations are optional, but for convinience I like to have of site version a control in place 
 ### Login to GitHub 
     # gh auth login
     
@@ -105,16 +99,10 @@ This prepatation are not madatory but for convinience of having version a contro
     Cloning into 'themes/onomy'...
     warning: You appear to have cloned an empty repository.
 
-
-    git --git-dir=themes/onomy/.git --work-tree=themes/onomy  status
-
-
-
-## [Creating A HUGO Theme From Scratch][cahtfs]{#cahtfs} 
-Here is the the real thing and from now on all commands are relative to the `~/CAHTFS/onomy` and is therefore mentioned only to keep me honest.
+## Creating A HUGO Theme From Scratch 
+Here is the the real thing and from now on all commands are relative to the `~/CAHTFS`.
 
 ### Create A New Theme
-cd 
     # hugo new theme onomy
     Creating theme at /home/westenfalke/CAHTFS/themes/onomy
     
@@ -148,7 +136,7 @@ cd
     13 directories, 11 files
     
 #### A Bit Of House Keeping
-`hugo` creates some file we no longer need and therefore should be deleted.
+While creating the theme `hugo` creates some file in the `resources/` folder we no longer need.
 
     # rm -rf resources/
 
@@ -156,8 +144,8 @@ cd
 
 The example website in the theme will be used to sowcase off its features and will contains this tutorial as a reference implementaion.
 
-    # hugo new site websites/exampleSite
-    Congratulations! Your new Hugo site is created in /home/westenfalke/CAHTFS/websites/exampleSite.
+    # hugo new site exampleSite
+    Congratulations! Your new Hugo site is created in /home/westenfalke/CAHTFS/themes/onomy/exampleSite.
 
     Just a few more steps and you're ready to go:
 
@@ -184,35 +172,25 @@ The example website in the theme will be used to sowcase off its features and wi
 ### Update the LICENSE
 Currently HUGO creates a LICENSE file using "_The MIT License (MIT)_" as default. 
 
-You cna change this e.g. by using the [CC License Chooser][cc-license-chooser], or create a LICENCE file right now on [GitHUB][gitgub], hence here is a standard suggestion (on empty repositories) which propposes several different licenses. 
+You can change this e.g. by using the [CC License Chooser][cc-license-chooser], or create a LICENCE file right now on [GitHUB][gitgub], hence here is a standard suggestion (on empty repositories) which offers several different licenses during file creation. 
 
 [link to a page about LICENSE selection on gitgub][tbd]
 [link to a page about LICENSE selection with CC License Chooser][tbd]
 
-If you are cool with <em>The MIT License (MIT)</em>  just keep it I'll switch to <em>Creative Commons Attribution-ShareAlike 4.0 International Public License</em> without futher notice befor I'll commit this repo to git.
+If you are cool with "_The MIT License (MIT)_"  just keep it, I'll switch silently to _Creative Commons Attribution-ShareAlike 4.0 International Public License_.
 
-# cat themes/onomy/LICENSE
-    The MIT License (MIT)
+	# head themes/onomy/LICENSE
+	Creative Commons Attribution-ShareAlike 4.0 International Public License
 
-    Copyright (c) 2021 YOUR_NAME_HERE
+	By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
 
-    Permission is hereby granted, free of charge, to any person obtaining a copy of
-    this software and associated documentation files (the "Software"), to deal in
-    the Software without restriction, including without limitation the rights to
-    use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-    the Software, and to permit persons to whom the Software is furnished to do so,
-    subject to the following conditions:
+	Section 1 – Definitions.
+	a.Adapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.
+	b.Adapter's License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.
+	c.BY-SA Compatible License means a license listed at  creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.
+	d.Copyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.
+	e.Effective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.
 
-    The above copyright notice and this permission notice shall be included in all
-    copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-    
 ## Create Minimal Documantation 
 
     # touch themes/onomy/README.md
@@ -251,6 +229,7 @@ Hence the content of this theme is straigt from the hugo documentation I'll skip
 #### Lauching hugo
 One could think, this is it, and yes firing up hugo right now will give us a working [sitemap][sitemap-xml] and three empty pages and hence content creation is our task, this is pretty much what to expect.  
 ![hugo start parameter aligned with folder](/img/screenshot/hugo-parameter.png "hugo parameter and folder")
+
 
     # hugo server  --source ./themes/onomy/exampleSite/ --themesDir ../../../themes/ --theme  onomy 
     
@@ -294,7 +273,7 @@ One could think, this is it, and yes firing up hugo right now will give us a wor
 
 ### Make Us Self A Home
 `hugo` creates all templates for us and besites the <em>baseof</em> template, all are empty.
-Befor we can see some thing on our new created theme, by running the exampleSite  with  `hugo`, we'll simply copy and paste the stuff fom the [hugo template documentation][hugo-templates-doc] into the templates. 
+Before we can see some thing on our new created theme, by running the exampleSite with `hugo`, we'll simply copy and paste the stuff fom the [hugo template documentation][hugo-templates-doc] into the templates. 
 
     # tree -s themes/onomy/layouts/
     themes/onomy/layouts/
@@ -405,7 +384,6 @@ For the hompage template alias `index.html` to work properly, we have to add one
 
 Put [HUGO Content View Templates][hugo-content-view-templates-doc] into `themes/onomy/layouts/_default/summary.html`
 
-
     # cat themes/onomy/layouts/_default/summary.html
     <article class="post">
       <header>
@@ -418,23 +396,23 @@ Put [HUGO Content View Templates][hugo-content-view-templates-doc] into `themes/
       </footer>
     </article>
         
-### Let's create some content to test our new theme
+### Let's Create Some Content To Test Our New Theme
 I suggest a hompage, two pages (an imprint and a privacy policy) and three posts are enough for starters and to test the pagination, lists and the summary.
 
-#### The Hompage
-This is where the magic happens, than this file triggers the invocation of the `index.html` template which rebered by the `baseof.html`.
+#### Create The Hompage
+This is where the magic happens, than this file triggers the invocation of the `index.html` template which renered by the `baseof.html`.
 
     # hugo new "_index.md" --source themes/onomy/exampleSite/
     /home/westenfalke/CAHTFS/themes/onomy/exampleSite/content/_index.md created
 
-#### Create The Shells For Imprint And THe Privacy Policy 
+#### Create The Shells For Imprint And The Privacy Policy 
 
     # hugo new "imprint.md" --source themes/onomy/exampleSite/
     /home/westenfalke/CAHTFS/themes/onomy/exampleSite/content/imprint.md created
     # hugo new "privacy policy.md" --source themes/onomy/exampleSite/
     /home/westenfalke/CAHTFS/themes/onomy/exampleSite/content/privacy policy.md created
 
-#### Some Empty Posts 
+#### Create Some Empty Posts 
 
     #hugo new "posts/the first post.md" --source themes/onomy/exampleSite/
     /home/westenfalke/CAHTFS/themes/onomy/exampleSite/content/posts/the first post.md created
@@ -444,7 +422,7 @@ This is where the magic happens, than this file triggers the invocation of the `
     /home/westenfalke/CAHTFS/themes/onomy/exampleSite/content/posts/the third post.md created
 
 ## Let's Have A Second Look 
-Hence this are all documents drafts, the flag `--buildDrafts` will do the trick <em>of rendering all the drafts</em> for the moment, so there is no need to change our newly created content yet.
+Hence this all of our documents are drafts, the flag `--buildDrafts` will do the trick _of rendering all the drafts_ for the moment, so there is no need to change our newly created content yet.
 
 ![hugo start parameter aligned with folder](/img/screenshot/hugo-parameter.png "hugo parameter and folder")
                             
@@ -471,58 +449,58 @@ Hence this are all documents drafts, the flag `--buildDrafts` will do the trick 
     Press Ctrl+C to stop
 
 
-I'm rather keen to see the http://localhost:1313/sitemap.xml and than have a look at http://localhost:1313/.
+I'm rather keen to see the [http://localhost:1313/sitemap.xml]() and than have a look at [http://localhost:1313/]().
 
-    This XML file does not appear to have any style information associated with it. The document tree is shown below.
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    <url>
-    <loc>http://localhost:1313/impressum/</loc>
-    <lastmod>2021-01-02T02:20:19+01:00</lastmod>
-    </url>
-    <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2021-01-02T02:17:42+01:00</lastmod>
-    </url>
-    <url>
-    <loc>http://localhost:1313/posts/my-third-post/</loc>
-    <lastmod>2021-01-02T02:13:46+01:00</lastmod>
-    </url>
-    <url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2021-01-02T02:13:46+01:00</lastmod>
-    </url>
-    <url>
-    <loc>http://localhost:1313/posts/my-second-post/</loc>
-    <lastmod>2021-01-02T02:13:35+01:00</lastmod>
-    </url>
-    <url>
-    <loc>http://localhost:1313/posts/my-first-post/</loc>
-    <lastmod>2021-01-02T02:13:24+01:00</lastmod>
-    </url>
-    <url>
-    <loc>http://localhost:1313/privacy-policy/</loc>
-    <lastmod>2021-01-02T02:12:15+01:00</lastmod>
-    </url>
-    <url>
-    <loc>http://localhost:1313/imprint/</loc>
-    <lastmod>2021-01-02T02:12:00+01:00</lastmod>
-    </url>
-    <url>
-    <loc>http://localhost:1313/categories/</loc>
-    </url>
-    <url>
-    <loc>http://localhost:1313/tags/</loc>
-    </url>
-    </urlset>
+	<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	  <url>
+		<loc>http://localhost:1313/posts/</loc>
+		<lastmod>2021-01-02T23:30:43+01:00</lastmod>
+	  </url>
+	  <url>
+		<loc>http://localhost:1313/posts/the-third-post/</loc>
+		<lastmod>2021-01-02T23:30:43+01:00</lastmod>
+	  </url>
+	  <url>
+		<loc>http://localhost:1313/posts/the-second-post/</loc>
+		<lastmod>2021-01-02T23:30:18+01:00</lastmod>
+	  </url>
+	  <url>
+		<loc>http://localhost:1313/posts/the-first-post/</loc>
+		<lastmod>2021-01-02T23:29:56+01:00</lastmod>
+	  </url>
+	  <url>
+		<loc>http://localhost:1313/privacy-policy/</loc>
+		<lastmod>2021-01-02T23:29:14+01:00</lastmod>
+	  </url>
+	  <url>
+		<loc>http://localhost:1313/imprint/</loc>
+		<lastmod>2021-01-02T23:28:55+01:00</lastmod>
+	  </url>
+	  <url>
+		<loc>http://localhost:1313/</loc>
+		<lastmod>2021-01-02T23:15:42+01:00</lastmod>
+	  </url>
+	  <url>
+		<loc>http://localhost:1313/categories/</loc>
+	  </url>
+	  <url>
+		<loc>http://localhost:1313/readme/</loc>
+	  </url>
+	  <url>
+		<loc>http://localhost:1313/tags/</loc>
+	  </url>
+	</urlset>
 
 
 
 ### Just Go Another Mile
 Just to proofe the above assumtion about the invocation of the `index.html` template which renders the `baseof.html` right and to leafe no templates empty (except `themes/onomy/layouts/404.html`), make this few little upates.
 
-    #  echo '{{ "<!-- " | safeHTML }}head.html{{ " -->" | safeHTML }}<head><meta charset="utf-8"></head>' >> themes/onomy/layouts/partials/head.html
-    #  echo '<div>FOOTER</div>' >> themes/onomy/layouts/partials/footer.html
-    #  echo '<div>HEADER</div>' >> themes/onomy/layouts/partials/header.html
+    # echo '{{ "<!-- " | safeHTML }}head.html{{ " -->" | safeHTML }}<head><meta charset="utf-8"></head>' >> themes/onomy/layouts/partials/head.html
+    # echo '<div>FOOTER</div>' >> themes/onomy/layouts/partials/footer.html
+    # echo '<div>HEADER</div>' >> themes/onomy/layouts/partials/header.html
 
 
 
@@ -533,97 +511,93 @@ Before any further changes I'm going to commit this piece of work to `git` with 
 ### What To Ignore 
 Telling git to ignore some files and  folder comcleatly.
 
-    #  touch .gitignore
-    #  echo ".gitignore
+    # touch themes/onomy/.gitignore
+    # echo ".gitignore
     **/resorces
     **/public
     **/public_html
-    **/*.ORI" >> .gitignore
+    **/*.ORI" >> touch themes/onomy/.gitignore
 
 ### What to keep
 Finding and adding all files we creates so far witout the meta data in `.git` 
 
-    #  find -type f |grep -v '.git' |xargs -n1 -d'\n' git add
-    #  git status
-    On branch master
+	# find . -type f | grep -v '.git' | xargs -n1 -d'\n' echo | cut -d'/' -f 4- |xargs  -d'\n' -n1 git --work-tree=themes/onomy/ --git-dir=themes/onomy/.git/ add
+    # git  --work-tree=themes/onomy/ --git-dir=themes/onomy/.git  add -f .gitignore
+	
+	# git  --work-tree=themes/onomy/ --git-dir=themes/onomy/.git/ status
+	On branch master
 
-    No commits yet
+	No commits yet
 
-    Changes to be committed:
-      (use "git rm --cached <file>..." to unstage)
-            new file:   README.md
-            new file:   exampleSite/archetypes/default.md
-            new file:   exampleSite/config.toml
-            new file:   exampleSite/content/_index.md
-            new file:   exampleSite/content/impressum.md
-            new file:   exampleSite/content/imprint.md
-            new file:   exampleSite/content/posts/my first post.md
-            new file:   exampleSite/content/posts/my second post.md
-            new file:   exampleSite/content/posts/my third post.md
-            new file:   exampleSite/content/privacy policy.md
-            new file:   themes/onomy/LICENSE
-            new file:   themes/onomy/archetypes/default.md
-            new file:   themes/onomy/layouts/404.html
-            new file:   themes/onomy/layouts/_default/baseof.html
-            new file:   themes/onomy/layouts/_default/list.html
-            new file:   themes/onomy/layouts/_default/single.html
-            new file:   themes/onomy/layouts/_default/summary.html
-            new file:   themes/onomy/layouts/index.html
-            new file:   themes/onomy/layouts/partials/footer.html
-            new file:   themes/onomy/layouts/partials/head.html
-            new file:   themes/onomy/layouts/partials/header.html
-            new file:   themes/onomy/theme.toml
+	Changes to be committed:
+	  (use "git rm --cached <file>..." to unstage)
+			new file:   .gitignore
+			new file:   LICENSE
+			new file:   README.md
+			new file:   archetypes/default.md
+			new file:   exampleSite/archetypes/default.md
+			new file:   exampleSite/config.toml
+			new file:   exampleSite/content/README.md
+			new file:   exampleSite/content/_index.md
+			new file:   exampleSite/content/imprint.md
+			new file:   exampleSite/content/posts/the first post.md
+			new file:   exampleSite/content/posts/the second post.md
+			new file:   exampleSite/content/posts/the third post.md
+			new file:   exampleSite/content/privacy policy.md
+			new file:   exampleSite/static/img/screenshot/hugo-parameter.png
+			new file:   layouts/404.html
+			new file:   layouts/_default/baseof.html
+			new file:   layouts/_default/list.html
+			new file:   layouts/_default/single.html
+			new file:   layouts/_default/summary.html
+			new file:   layouts/index.html
+			new file:   layouts/partials/footer.html
+			new file:   layouts/partials/head.html
+			new file:   layouts/partials/header.html
+			new file:   static/img/screenshot/hugo-parameter.png
+			new file:   theme.toml
     
-    \#  git commit -m'initial configuration, README, LICENSE and templates'
-    [master (root-commit) 8389b5a] initial configuration, README, LICENSE and templates
-    Committer: westenfalke <westenfalke@MiniDEV.localdomain>
-    Your name and email address were configured automatically based
-    on your username and hostname. Please check that they are accurate.
-    You can suppress this message by setting them explicitly:
-    
-        git config --global user.name "Your Name"
-        git config --global user.email you@example.com
-    
-    After doing this, you may fix the identity used for this commit with:
-    
-        git commit --amend --reset-author
-    
-    22 files changed, 783 insertions(+)
-    create mode 100644 README.md
-    create mode 100644 exampleSite/archetypes/default.md
-    create mode 100644 exampleSite/config.toml
-    create mode 100644 exampleSite/content/_index.md
-    create mode 100644 exampleSite/content/impressum.md
-    create mode 100644 exampleSite/content/imprint.md
-    create mode 100644 exampleSite/content/posts/my first post.md
-    create mode 100644 exampleSite/content/posts/my second post.md
-    create mode 100644 exampleSite/content/posts/my third post.md
-    create mode 100644 exampleSite/content/privacy policy.md
-    create mode 100644 themes/onomy/LICENSE
-    create mode 100644 themes/onomy/archetypes/default.md
-    create mode 100644 themes/onomy/layouts/404.html
-    create mode 100644 themes/onomy/layouts/_default/baseof.html
-    create mode 100644 themes/onomy/layouts/_default/list.html
-    create mode 100644 themes/onomy/layouts/_default/single.html
-    create mode 100644 themes/onomy/layouts/_default/summary.html
-    create mode 100644 themes/onomy/layouts/index.html
-    create mode 100644 themes/onomy/layouts/partials/footer.html
-    create mode 100644 themes/onomy/layouts/partials/head.html
-    create mode 100644 themes/onomy/layouts/partials/header.html
-    create mode 100644 themes/onomy/theme.toml
-    
-    # #  git push
-    Enumerating objects: 33, done.
-    Counting objects: 100% (33/33), done.
-    Delta compression using up to 4 threads
-    Compressing objects: 100% (27/27), done.
-    Writing objects: 100% (33/33), 14.24 KiB | 2.85 MiB/s, done.
-    Total 33 (delta 0), reused 0 (delta 0)
-    To https://github.com/westenfalke/onomy-hugo-theme.git
-    * [new branch]      master -> master
+	# git --work-tree=themes/onomy/ --git-dir=themes/onomy/.git commit -m'initial configuration, README, LICENSE and templates'
+	[master (root-commit) d8101fb] initial configuration, README, LICENSE and templates
+	 25 files changed, 1605 insertions(+)
+	 create mode 100644 .gitignore
+	 create mode 100644 LICENSE
+	 create mode 100644 README.md
+	 create mode 100644 archetypes/default.md
+	 create mode 100644 exampleSite/archetypes/default.md
+	 create mode 100644 exampleSite/config.toml
+	 create mode 100644 exampleSite/content/README.md
+	 create mode 100644 exampleSite/content/_index.md
+	 create mode 100644 exampleSite/content/imprint.md
+	 create mode 100644 exampleSite/content/posts/the first post.md
+	 create mode 100644 exampleSite/content/posts/the second post.md
+	 create mode 100644 exampleSite/content/posts/the third post.md
+	 create mode 100644 exampleSite/content/privacy policy.md
+	 create mode 100644 exampleSite/static/img/screenshot/hugo-parameter.png
+	 create mode 100644 layouts/404.html
+	 create mode 100644 layouts/_default/baseof.html
+	 create mode 100644 layouts/_default/list.html
+	 create mode 100644 layouts/_default/single.html
+	 create mode 100644 layouts/_default/summary.html
+	 create mode 100644 layouts/index.html
+	 create mode 100644 layouts/partials/footer.html
+	 create mode 100644 layouts/partials/head.html
+	 create mode 100644 layouts/partials/header.html
+	 create mode 100644 static/img/screenshot/hugo-parameter.png
+	 create mode 100644 theme.toml
+	# git --work-tree=themes/onomy/ --git-dir=themes/onomy/.git push
+	Enumerating objects: 37, done.
+	Counting objects: 100% (37/37), done.
+	Delta compression using up to 4 threads
+	Compressing objects: 100% (28/28), done.
+	Writing objects: 100% (37/37), 20.80 KiB | 1.39 MiB/s, done.
+	Total 37 (delta 1), reused 0 (delta 0)
+	remote: Resolving deltas: 100% (1/1), done.
+	To https://github.com/westenfalke/onomy-hugo-theme.git
+	 * [new branch]      master -> master
 
-## [Second Half OF Creating A HUGO Theme From Scratch][cahtfs-second-half]{#cahtfs-second-half}
-[TBD][tbd]{#tbd}
+## Second Half OF Creating A HUGO Theme From Scratch
+<div id="tbd"/>
 * add tanonomy templates
 * link to a page about LICENSE selection on gitgub
 * link to a page about LICENSE selection with CC License Chooser
@@ -655,10 +629,10 @@ Finding and adding all files we creates so far witout the meta data in `.git`
 [git]: https://git-scm.com/ "git distributed version control system --local-branching-on-the-cheap"
 [gitgub]: https://github.com/ "GitHUB Version Control - Where the world builds software"
 
-[preparation]: #preparation "Preparation For Creating A HUGO Theme From Scratch"
-[installation]: #installation "Installation For Creating A HUGO Theme From Scratch"
-[cahtfs]: #cahtfs "Creating A HUGO Theme From Scratch" 
-[cahtfs-second-half]: #cahtfs-second-half "Second Half OF Creating A HUGO Theme From Scratch"
+[preparation]: #Preparation "Preparation For Creating A HUGO Theme From Scratch"
+[installation]: #Installation "Installation For Creating A HUGO Theme From Scratch"
+[cahtfs]: #creating-a-hugo-theme-from-scratch "Creating A HUGO Theme From Scratch" 
+[cahtfs-second-half]: #second-half-of-creating-a-hugo-theme-from-scratch "Second Half OF Creating A HUGO Theme From Scratch"
 [hugo-templates-doc]: https://gohugo.io/templates/ "hugo templates documentation"
 [hugo-templates-homepage-doc]: https://gohugo.io/templates/homepage/ "HUGO Homepage Template"
 [hugo-templates-lists-doc]: https://gohugo.io/templates/lists/ "HUGO Lists Template"

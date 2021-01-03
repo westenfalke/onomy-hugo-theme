@@ -23,7 +23,7 @@ and `westenfalke@MiniDEV:~/CAHTFS$` is replaced with just `#` just like this:
     drwxr-xr-x  2 westenfalke westenfalke 4096 Jan  2 15:52 .
     drwxr-xr-x 11 westenfalke westenfalke 4096 Jan  2 15:52 ..
 
-## [Installation][Installation]{#installation}
+## [Installation][Installation]
 
 ### Madatory Commands
 #### [hugo][hugo-cmd]{#hugo-cmd}
@@ -42,7 +42,7 @@ I introduce the `tree` command to for sake of this tutorial.
 #### [git][git-cmd]{#git-cmd}
 I like `git` to do the version controll thingi here,
 if version control is not in you scope you can start
-[here Creating A HUGO Theme From Scratch](#cahtfs)
+[here Creating A HUGO Theme From Scratch][cahtfs]
 
     # sudo apt install git
 
@@ -54,7 +54,7 @@ Hence I like to see you participating in this project I'll publish it on GitHUB 
     # sudo apt update
     # sudo apt install gh
 
-## [Preparation][Preparation]{#preparation}
+## [Preparation][Preparation]
 This prepatations are optional, but for convinience I like to have of site version a control in place 
 ### Login to GitHub 
     # gh auth login
@@ -97,7 +97,7 @@ This prepatations are optional, but for convinience I like to have of site versi
     Cloning into 'themes/onomy'...
     warning: You appear to have cloned an empty repository.
 
-## [Creating A HUGO Theme From Scratch][cahtfs]{#cahtfs} 
+## Creating A HUGO Theme From Scratch 
 Here is the the real thing and from now on all commands are relative to the `~/CAHTFS`.
 
 ### Create A New Theme
@@ -594,8 +594,8 @@ Finding and adding all files we creates so far witout the meta data in `.git`
 	To https://github.com/westenfalke/onomy-hugo-theme.git
 	 * [new branch]      master -> master
 
-## [Second Half OF Creating A HUGO Theme From Scratch][cahtfs-second-half]{#cahtfs-second-half}
-[TBD][tbd]{#tbd}
+## Second Half OF Creating A HUGO Theme From Scratch
+<div id="tbd"/>
 * add tanonomy templates
 * link to a page about LICENSE selection on gitgub
 * link to a page about LICENSE selection with CC License Chooser
@@ -627,10 +627,10 @@ Finding and adding all files we creates so far witout the meta data in `.git`
 [git]: https://git-scm.com/ "git distributed version control system --local-branching-on-the-cheap"
 [gitgub]: https://github.com/ "GitHUB Version Control - Where the world builds software"
 
-[preparation]: #preparation "Preparation For Creating A HUGO Theme From Scratch"
-[installation]: #installation "Installation For Creating A HUGO Theme From Scratch"
-[cahtfs]: #cahtfs "Creating A HUGO Theme From Scratch" 
-[cahtfs-second-half]: #cahtfs-second-half "Second Half OF Creating A HUGO Theme From Scratch"
+[preparation]: #Preparation "Preparation For Creating A HUGO Theme From Scratch"
+[installation]: #Installation "Installation For Creating A HUGO Theme From Scratch"
+[cahtfs]: #creating-a-hugo-theme-from-scratch "Creating A HUGO Theme From Scratch" 
+[cahtfs-second-half]: #second-half-of-creating-a-hugo-theme-from-scratch "Second Half OF Creating A HUGO Theme From Scratch"
 [hugo-templates-doc]: https://gohugo.io/templates/ "hugo templates documentation"
 [hugo-templates-homepage-doc]: https://gohugo.io/templates/homepage/ "HUGO Homepage Template"
 [hugo-templates-lists-doc]: https://gohugo.io/templates/lists/ "HUGO Lists Template"
