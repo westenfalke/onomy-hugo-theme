@@ -447,7 +447,7 @@ Hence this all of our documents are drafts, the flag `--buildDrafts` will do the
     Press Ctrl+C to stop
 
 
-I'm rather keen to see the [http://localhost:1313/sitemap.xml]() and than have a look at [http://localhost:1313/]().
+I'm rather keen to see the http://localhost:1313/sitemap.xml and than have a look at http://localhost:1313/.
 
 	<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
