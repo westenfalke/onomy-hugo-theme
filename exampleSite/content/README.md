@@ -407,10 +407,10 @@ This is where the magic happens, than this file triggers the invocation of the `
 
 #### Create The Shells For Imprint And The Privacy Policy 
 
-    # hugo new "imprint.md" --source themes/onomy/exampleSite/
-    /home/westenfalke/CAHTFS/themes/onomy/exampleSite/content/imprint.md created
-    # hugo new "privacy policy.md" --source themes/onomy/exampleSite/
-    /home/westenfalke/CAHTFS/themes/onomy/exampleSite/content/privacy policy.md created
+    # hugo new "law/imprint.md" --source themes/onomy/exampleSite/
+    /home/westenfalke/CAHTFS/themes/onomy/exampleSite/content/law/imprint.md created
+    # hugo new "law/privacy policy.md" --source themes/onomy/exampleSite/
+    /home/westenfalke/CAHTFS/themes/onomy/exampleSite/content/law/privacy policy.md created
 
 #### Create Some Empty Posts 
 
@@ -426,20 +426,20 @@ Hence this all of our documents are drafts, the flag `--buildDrafts` will do the
 
 ![hugo start parameter aligned with folder](/img/screenshot/hugo-parameter.png "hugo parameter and folder")
                             
-	# hugo server  --source ./themes/onomy/exampleSite/ --themesDir ../../../themes/ --theme onomy --buildDrafts
+    #  hugo server  --source ./themes/onomy/exampleSite/ --themesDir ../../../themes/ --theme onomy --buildDrafts
 
                        | EN
     -------------------+-----
-      Pages            | 13
+      Pages            | 16
       Paginator pages  |  0
       Non-page files   |  0
-      Static files     |  0
+      Static files     |  1
       Processed images |  0
       Aliases          |  0
       Sitemaps         |  1
       Cleaned          |  0
 
-    Built in 18 ms
+    Built in 23 ms
     Watching for changes in /home/westenfalke/CAHTFS/themes/onomy/{archetypes,exampleSite,layouts,static}
     Watching for config changes in themes/onomy/exampleSite/config.toml
     Environment: "development"
@@ -455,47 +455,46 @@ Hence this all of our documents are drafts, the flag `--buildDrafts` will do the
 
 I'm rather keen to see the http://localhost:1313/sitemap.xml and than have a look at http://localhost:1313/.
 
-	<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-	  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-	  <url>
-		<loc>http://localhost:1313/posts/</loc>
-		<lastmod>2021-01-02T23:30:43+01:00</lastmod>
-	  </url>
-	  <url>
-		<loc>http://localhost:1313/posts/the-third-post/</loc>
-		<lastmod>2021-01-02T23:30:43+01:00</lastmod>
-	  </url>
-	  <url>
-		<loc>http://localhost:1313/posts/the-second-post/</loc>
-		<lastmod>2021-01-02T23:30:18+01:00</lastmod>
-	  </url>
-	  <url>
-		<loc>http://localhost:1313/posts/the-first-post/</loc>
-		<lastmod>2021-01-02T23:29:56+01:00</lastmod>
-	  </url>
-	  <url>
-		<loc>http://localhost:1313/privacy-policy/</loc>
-		<lastmod>2021-01-02T23:29:14+01:00</lastmod>
-	  </url>
-	  <url>
-		<loc>http://localhost:1313/imprint/</loc>
-		<lastmod>2021-01-02T23:28:55+01:00</lastmod>
-	  </url>
-	  <url>
-		<loc>http://localhost:1313/</loc>
-		<lastmod>2021-01-02T23:15:42+01:00</lastmod>
-	  </url>
-	  <url>
-		<loc>http://localhost:1313/categories/</loc>
-	  </url>
-	  <url>
-		<loc>http://localhost:1313/readme/</loc>
-	  </url>
-	  <url>
-		<loc>http://localhost:1313/tags/</loc>
-	  </url>
-	</urlset>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+  <loc>http://localhost:1313/posts/</loc>
+  <lastmod>2021-01-02T23:30:43+01:00</lastmod>
+  </url>
+  <url>
+  <loc>http://localhost:1313/posts/the-third-post/</loc>
+  <lastmod>2021-01-02T23:30:43+01:00</lastmod>
+  </url>
+  <url>
+  <loc>http://localhost:1313/posts/the-second-post/</loc>
+  <lastmod>2021-01-02T23:30:18+01:00</lastmod>
+  </url>
+  <url>
+  <loc>http://localhost:1313/posts/the-first-post/</loc>
+  <lastmod>2021-01-02T23:29:56+01:00</lastmod>
+  </url>
+  <url>
+  <loc>http://localhost:1313/law/</loc>
+  <lastmod>2021-01-02T23:29:14+01:00</lastmod>
+  </url>
+  <url>
+  <loc>http://localhost:1313/law/privacy-policy/</loc>
+  <lastmod>2021-01-02T23:29:14+01:00</lastmod>
+  </url>
+  <url>
+  <loc>http://localhost:1313/law/imprint/</loc>
+  <lastmod>2021-01-02T23:28:55+01:00</lastmod>
+  </url>
+  <url>
+  <loc>http://localhost:1313/</loc>
+  <lastmod>2021-01-02T23:15:42+01:00</lastmod>
+  </url>
+  <url>
+  <loc>http://localhost:1313/categories/</loc>
+  </url>
+  <url>
+  <loc>http://localhost:1313/tags/</loc>
+  </url>
+  </urlset>
 
 
 
