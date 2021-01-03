@@ -26,27 +26,27 @@ and `westenfalke@MiniDEV:~/CAHTFS$` is replaced with just `#` just like this:
 ## [Installation][Installation]
 
 ### Madatory Commands
-#### [hugo][hugo-cmd]{#hugo-cmd}
+#### [hugo][hugo-cmd]
 `hugo` the start of this show
 
     # sudo apt install hugo
 
 ### Optional Commands
 
-#### [tree][tree-cmd]{#tree-cmd}
+#### [tree][tree-cmd]
 To display ascii style information regarding the files and the folder structure, 
 I introduce the `tree` command to for sake of this tutorial. 
 
     # sudo apt install tree
 
-#### [git][git-cmd]{#git-cmd}
+#### [git][git-cmd]
 I like `git` to do the version controll thingi here,
 if version control is not in you scope you can start
 [here Creating A HUGO Theme From Scratch][cahtfs]
 
     # sudo apt install git
 
-#### [gh][gh-cmd]{#gh-cmd}
+#### [gh][gh-cmd]
 Hence I like to see you participating in this project I'll publish it on GitHUB via CLI using the `gh` command.
         
     # sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0 
@@ -617,12 +617,12 @@ Finding and adding all files we creates so far witout the meta data in `.git`
 [mislav-gh-linux]: https://github.com/cli/cli/blob/trunk/docs/install_linux.md  "Installing gh on Linux"
 [gitaarik-git-submodules]: https://gist.github.com/gitaarik/8735255 "Submodules basic explanation"
 [daringfireball]: https://daringfireball.net/projects/markdown/syntax "Markdown: Syntax"
-
+´
 [tools]: #tools "all the tools you need"
-[hugo-cmd]: #hugo-cmd "hugo command"
-[tree-cmd]: #tree-cmd "tree command"
-[git-cmd]: #git-cmd "git the version control"
-[gh-cmd]: #gh-cmd "GitHUB CLI tool"
+[hugo-cmd]: #hugo "hugo command"
+[tree-cmd]: #tree "tree command"
+[git-cmd]: #git "git the version control"
+[gh-cmd]: #gh "GitHUB CLI tool"
 [cc-license-chooser]: https://creativecommons.org/choose/ "Creative Commons License Chooser"
 [git]: https://git-scm.com/ "git distributed version control system --local-branching-on-the-cheap"
 [gitgub]: https://github.com/ "GitHUB Version Control - Where the world builds software"

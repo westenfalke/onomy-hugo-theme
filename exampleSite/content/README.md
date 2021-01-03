@@ -28,27 +28,27 @@ and `westenfalke@MiniDEV:~/CAHTFS$` is replaced with just `#` just like this:
 ## [Installation][Installation]
 
 ### Madatory Commands
-#### [hugo][hugo-cmd]{#hugo-cmd}
+#### [hugo][hugo-cmd]
 `hugo` the start of this show
 
     # sudo apt install hugo
 
 ### Optional Commands
 
-#### [tree][tree-cmd]{#tree-cmd}
+#### [tree][tree-cmd]
 To display ascii style information regarding the files and the folder structure, 
 I introduce the `tree` command to for sake of this tutorial. 
 
     # sudo apt install tree
 
-#### [git][git-cmd]{#git-cmd}
+#### [git][git-cmd]
 I like `git` to do the version controll thingi here,
 if version control is not in you scope you can start
 [here Creating A HUGO Theme From Scratch][cahtfs]
 
     # sudo apt install git
 
-#### [gh][gh-cmd]{#gh-cmd}
+#### [gh][gh-cmd]
 Hence I like to see you participating in this project I'll publish it on GitHUB via CLI using the `gh` command.
         
     # sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0 
