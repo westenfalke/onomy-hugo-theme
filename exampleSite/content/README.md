@@ -604,7 +604,7 @@ Finding and adding all files we creates so far witout the meta data in `.git`
 * link to a page about LICENSE selection with CC License Chooser
 
 
-## [Credits][credits] {#credits}
+## [Credits][credits]
 * [Installing gh on Linux and FreeBSD][mislav-gh-linux] by Mislav Marohnić
 * [Git Submodules basic explanation][gitaarik-git-submodules] by Rik Gitaarik
 * [Markdown: Syntax][daringfireball] by John Gruber
@@ -615,7 +615,7 @@ Finding and adding all files we creates so far witout the meta data in `.git`
 [readme-md]: # "README.md"
 [tbd]: #tbd "To Be Done"
 
-[credits]: #credits "Thank you ALL"
+[credits]: #Credits "Thank you ALL"
 [kaushalmodi-hugo-sandbox]: https://gitlab.com/kaushalmodi/hugo-sandbox/ "The hugo-sandbox "
 [mislav-gh-linux]: https://github.com/cli/cli/blob/trunk/docs/install_linux.md  "Installing gh on Linux"
 [gitaarik-git-submodules]: https://gist.github.com/gitaarik/8735255 "Submodules basic explanation"
