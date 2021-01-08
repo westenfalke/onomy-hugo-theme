@@ -175,19 +175,30 @@ You can change this e.g. by using the [CC License Chooser][cc-license-chooser], 
 [link to a page about LICENSE selection on gitgub][tbd]
 [link to a page about LICENSE selection with CC License Chooser][tbd]
 
-If you are cool with "_The MIT License (MIT)_"  just keep it, I'll switch silently to _Creative Commons Attribution-ShareAlike 4.0 International Public License_.
+If you are cool with "_The MIT License (MIT)_"  just keep it, I highly recommand to do this vi GiuHub.
 
-	# head themes/onomy/LICENSE
-	Creative Commons Attribution-ShareAlike 4.0 International Public License
+	# cat themes/onomy/LICENSE
+	MIT License
 
-	By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
+	Copyright (c) 2021 Stefan Welke
 
-	Section 1 – Definitions.
-	a.Adapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.
-	b.Adapter's License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.
-	c.BY-SA Compatible License means a license listed at  creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.
-	d.Copyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.
-	e.Effective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in all
+	copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	SOFTWARE.
 
 ## Create Minimal Documantation 
 
@@ -203,8 +214,8 @@ Hence the content of this theme is straigt from the hugo documentation I'll skip
     ### See https://github.com/gohugoio/hugoThemes#themetoml for an example
     
     name = "onomy"
-    license = "Attribution-ShareAlike 4.0 International"
-    licenselink = "https://creativecommons.org/licenses/by-sa/4.0?ref=chooser-v1"
+    license = "MIT"
+    licenselink = "https://github.com/westenfalke/onomy-hugo-theme/blob/master/LICENSE"
     description = "onomy (hugo taxonomy template)"
     homepage = "https://github.com/westenfalke/onomy-hugo-theme"
     tags = [gdpr selfcontaint learning tutorial]
