@@ -1,7 +1,7 @@
 # Creating A HUGO Theme westenfalke/onomy-hugo-theme From Scratch
 ## Convention
 ### Root
-Let's start with a clean slate e.g. in our home directory e.g. in a folder named `\~/CAHTFS/`.
+Let's start with a clean slate e.g. in our home directory e.g. in a folder named `~/CAHTFS/`.
 Its name dosen't matter and to keep things consistent and easy to replay, 
 all paths are relative too this folder and all comands are executes sitting in that folder, too. 
 
