@@ -200,7 +200,7 @@ If you are cool with "_The MIT License (MIT)_"  just keep it, I highly recommand
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 	SOFTWARE.
 
-## Create Minimal Documantation 
+## Create Minimal Documentation 
 
     # touch themes/onomy/README.md
     # echo "# Creating A HUGO Theme westenfalke/onomy-hugo-theme From Scratch" >> themes/onomy/README.md
