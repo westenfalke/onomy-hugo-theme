@@ -618,6 +618,7 @@ Finding and adding all files we creates so far witout the meta data in `.git`
 * add tanonomy templates
 * link to a page about LICENSE selection on gitgub
 * link to a page about LICENSE selection with CC License Chooser
+* foo bat baz
 
 
 ## Credits
